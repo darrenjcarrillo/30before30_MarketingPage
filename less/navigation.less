@@ -1,0 +1,66 @@
+// Header
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: @black;
+  padding: 2rem 0;
+  .logo{
+    font-size: 3rem;
+  }
+
+  .navigation {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.5rem;
+      
+      .nav-links {
+       display: flex;
+       justify-content: space-around;
+       width: 50%;
+    
+       a{
+        display: flex;
+        align-items: center;
+       }
+
+       a:hover {
+        color: @grey;
+       }
+      }
+
+      .signUp-btn {
+        display: flex;
+        justify-content: center;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border: 2px solid @pink;
+        border-radius: 10px;
+    
+        a{
+          display: flex;
+          align-items: center;
+        }
+    
+        a:hover {
+          color: @black;
+          font-weight: 600;
+        }
+        
+      }
+    
+      .signUp-btn:hover {
+        background-color: @white;
+        color: @black;
+      }
+     
+    }
+  }
+}
