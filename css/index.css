@@ -200,7 +200,7 @@ a {
   width: 10rem;
   height: 3rem;
   font-size: 1.5rem;
-  border: 2px solid #c72e7b;
+  border: 2px solid #ff0080;
   border-radius: 10px;
 }
 .nav-bar .navigation nav .signUp-btn a {
@@ -214,6 +214,9 @@ a {
 .nav-bar .navigation nav .signUp-btn:hover {
   background-color: #fff;
   color: #000;
+}
+footer {
+  background-color: #000;
 }
 .header-img {
   display: flex;
@@ -244,7 +247,7 @@ a {
   justify-content: space-around;
   width: 20rem;
   height: 4rem;
-  border: 3px solid #c72e7b;
+  border: 3px solid #ff0080;
   font-size: 2rem;
 }
 .passion {
@@ -265,4 +268,99 @@ a {
 .passion .passion-content h1 {
   font-size: 5rem;
   margin: 2rem 0;
+}
+.aboutUs {
+  width: 75%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+.aboutUs .aboutUsContent h1 {
+  font-size: 5rem;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+.team .members {
+  width: 75%;
+}
+.team .members .ui-developers {
+  width: 100%;
+}
+.team .members .ui-developers h2 {
+  margin-bottom: 5rem;
+}
+.team .members .ui-developers .ui-guys {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team .members .ui-developers .ui-guys img {
+  border-radius: 50%;
+  width: 20rem;
+}
+.team .members .ui-developers .ui-guys p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team .members .ui-developers .ui-guys .social-media {
+  font-size: 2rem;
+}
+.team .members .front-end-developers {
+  width: 100%;
+}
+.team .members .front-end-developers h2 {
+  margin: 5rem 0;
+}
+.team .members .front-end-developers .front-end-guys {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team .members .front-end-developers .front-end-guys img {
+  border-radius: 50%;
+  width: 20rem;
+}
+.team .members .front-end-developers .front-end-guys p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team .members .front-end-developers .front-end-guys .social-media {
+  font-size: 2rem;
+}
+.team .members .back-end {
+  width: 100%;
+}
+.team .members .back-end h2 {
+  margin: 5rem 0;
+}
+.team .members .back-end .back-end-guys img {
+  border-radius: 50%;
+  width: 20rem;
+}
+.team .members .back-end .back-end-guys p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team .members .back-end .back-end-guys .social-media {
+  font-size: 2rem;
+}
+.team .members .advisor {
+  width: 75%;
+}
+.team .members .advisor h2 {
+  margin: 5rem 0;
+}
+.team .members .advisor .advisor-guy img {
+  border-radius: 50%;
+  width: 20rem;
+}
+.team .members .advisor .advisor-guy p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team .members .advisor .advisor-guy .social-media {
+  font-size: 2rem;
 }
