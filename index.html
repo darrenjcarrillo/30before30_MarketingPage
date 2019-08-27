@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!-- Navigation -->
   <section class="nav-bar">
     <div class="logo">
       <a href="#home">30 Before 30</a>
@@ -28,7 +30,7 @@
 
     </div>
   </section>
-
+  <!-- Main Header Image -->
   <section class="header-img">
     <div class="header-content">
       <div class="main-heading">
@@ -52,7 +54,31 @@
     </div>
   </section>
 
-  <section class="main-content">
+  <!-- Carousel -->
+  <section class="carousel">
+    <div class="carousel__container">
+      <button class="carousel__button carousel__button--left is-hidden"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide"><img class="carousel__image" src="img/girls.jpg"
+              alt="Girl In Sitting On A Clift">
+          </li>
+          <li class="carousel__slide"><img class="carousel__image" src="img/sunset-shoes.jpg" alt="Man in the forest">
+          </li>
+          <li class="carousel__slide"><img class="carousel__image" src="img/couple.jpg" alt="Couple In the Road"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="main-content">
     <div class="container">
       <div>
         <div class="content-img"><img src="img/girls.jpg" alt="Girl In Sitting On A Clift"></div>
@@ -79,7 +105,7 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="secondary-content">
     <div>
@@ -98,6 +124,7 @@
     <a href="#logIn">Log In</a>
     <a href="#contact">Contact Us</a>
   </footer>
+  <script src="js/carousel.js"></script>
 </body>
 
 </html>
