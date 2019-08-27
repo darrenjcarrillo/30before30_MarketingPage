@@ -165,10 +165,13 @@ a {
   display: flex;
   justify-content: space-around;
   background-color: #000;
-  padding: 2rem 0;
 }
 .nav-bar .logo {
-  font-size: 3rem;
+  width: 10rem;
+  height: 10rem;
+}
+.nav-bar .logo img {
+  width: 100%;
 }
 .nav-bar .navigation {
   width: 20%;
@@ -180,7 +183,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .nav-bar .navigation nav .nav-links {
   display: flex;
@@ -199,7 +202,7 @@ a {
   justify-content: center;
   width: 10rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border: 2px solid #ff0080;
   border-radius: 10px;
 }
@@ -234,6 +237,7 @@ footer {
   align-items: center;
   text-align: center;
   color: #fff;
+  text-shadow: 1px 1px 2px #000;
 }
 .header-img .header-content .main-heading h1 {
   font-size: 20rem;
@@ -342,12 +346,57 @@ footer {
 .is-hidden {
   display: none;
 }
+.img1 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/girls.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.img1 h2 {
+  font-size: 5rem;
+  text-shadow: 1px 1px 2px #000;
+}
 .secondary-content {
   display: flex;
   justify-content: space-evenly;
+  margin: 10rem 0;
 }
 .secondary-content div {
-  border: 1px solid #000;
+  width: 25%;
+  height: 30rem;
+  color: #fff;
+  box-shadow: 7px 7px 7px #ff0080;
+}
+.secondary-content div .spring {
+  width: 100%;
+  background-image: url(/img/spring.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.secondary-content div .travel {
+  width: 100%;
+  background-image: url(/img/couple-bike.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.secondary-content div .life {
+  width: 100%;
+  background-image: url(/img/life.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.secondary-content div h3 {
+  text-shadow: 1px 1px 2px #000;
 }
 .aboutUs {
   width: 75%;
