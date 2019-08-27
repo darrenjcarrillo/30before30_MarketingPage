@@ -7,18 +7,60 @@
   height: 100vh;
 
   .header-content {
-    width: 1000px;
+    width: 100%;
+    margin: 20rem auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    color: @white;
     .main-heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
       h1 {
-        font-size: 10rem;
+        font-size: 20rem;
+      }
+      h2 {
+        font-size: 5rem;
       }
     }
+    
+    .create-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 20rem;
+      height: 4rem;
+      border: 3px solid @pink;
+      font-size: 2rem;
+    }
+
+    .create-btn:hover {
+
+    }
   }
+}
+
+.passion {
+  display: flex;
+  justify-content: center;
+  background-color: @black;
+
+  .passion-content {  
+    color: @white;
+    width: 800px;
+    text-align: center;
+    margin: 5rem 0;
+
+    p{
+  
+      font-size: 2rem;
+      margin: 2rem 0; 
+    }
+  
+    h1 {
+      font-size: 5rem;
+      margin: 2rem 0; 
+    }
+  }
+
+
 }

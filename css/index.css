@@ -143,9 +143,6 @@ h4,
 h5 {
   font-family: 'Roboto Mono', monospace;
 }
-h1 {
-  font-size: 5rem;
-}
 h2 {
   font-size: 3.2rem;
 }
@@ -227,17 +224,45 @@ a {
   height: 100vh;
 }
 .header-img .header-content {
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header-img .header-content .main-heading {
+  width: 100%;
+  margin: 20rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 .header-img .header-content .main-heading h1 {
-  font-size: 10rem;
+  font-size: 20rem;
+}
+.header-img .header-content .main-heading h2 {
+  font-size: 5rem;
+}
+.header-img .header-content .create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20rem;
+  height: 4rem;
+  border: 3px solid #c72e7b;
+  font-size: 2rem;
+}
+.passion {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.passion .passion-content {
+  color: #fff;
+  width: 800px;
+  text-align: center;
+  margin: 5rem 0;
+}
+.passion .passion-content p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.passion .passion-content h1 {
+  font-size: 5rem;
+  margin: 2rem 0;
 }
