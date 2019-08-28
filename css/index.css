@@ -161,6 +161,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+a:hover {
+  color: #e2e2e2;
+}
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -220,6 +223,29 @@ a {
 }
 footer {
   background-color: #000;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+footer .footer-nav a {
+  font-size: 1.7rem;
+}
+footer .social h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+footer .social div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+footer .social div a {
+  font-size: 3rem;
 }
 .header-img {
   display: flex;
@@ -253,6 +279,9 @@ footer {
   height: 4rem;
   border: 3px solid #ff0080;
   font-size: 2rem;
+}
+.header-img .header-content .create-btn:hover {
+  text-shadow: 2px 2px 4px #000000;
 }
 .passion {
   display: flex;
@@ -353,17 +382,52 @@ footer {
   background-image: url(/img/girls.jpg);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   color: #fff;
 }
 .img1 h2 {
-  font-size: 5rem;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+}
+.img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/man-clouds.jpg);
+  background-size: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.img2 h2 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+}
+.img3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/couple.jpg);
+  background-size: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.img3 h2 {
+  font-size: 7rem;
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
 .secondary-content {
   display: flex;
   justify-content: space-evenly;
-  margin: 10rem 0;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
 }
 .secondary-content div {
   width: 25%;
@@ -397,6 +461,15 @@ footer {
 }
 .secondary-content div h3 {
   text-shadow: 1px 1px 2px #000;
+}
+.third-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10rem;
+}
+.third-content div {
+  width: 25%;
+  text-align: center;
 }
 .aboutUs {
   width: 75%;
