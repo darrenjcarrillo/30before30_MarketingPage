@@ -2,7 +2,6 @@
   height: 600px;
   width: 80%;
   margin: 5rem auto;
-
 }
 
 .carousel__container {
@@ -59,7 +58,6 @@
 .carousel__button .fas {
   width: 2rem;
   font-size: 3rem;
-
 }
 
 .carousel__nav {
@@ -73,15 +71,17 @@
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
   margin: 0 1.2rem;
   cursor: pointer;
 }
- .current-slide {
-  background:  rgba(0,0,0,.75);
+.current-slide {
+  background: rgba(0, 0, 0, 0.75);
 }
 
-.is-hidden {display: none;}
+.is-hidden {
+  display: none;
+}
 
 .img1 {
   width: 100%;
@@ -98,8 +98,17 @@
     font-size: 7rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px @black;
+
+    @media @mobile {
+      text-align: center;
+      width: 100%;
+      font-size: 5rem;
+    }
   }
 
+  @media @mobile {
+    background-image: url(/img/mobile1.jpg);
+  }
 }
 
 .img2 {
@@ -117,8 +126,17 @@
     font-size: 7rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px @black;
+
+    @media @mobile {
+      text-align: center;
+      width: 100%;
+      font-size: 5rem;
+    }
   }
 
+  @media @mobile {
+    background-image: url(/img/mobile3.jpg);
+  }
 }
 
 .img3 {
@@ -136,6 +154,14 @@
     font-size: 7rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px @black;
+    @media @mobile {
+      text-align: center;
+      width: 100%;
+      font-size: 5rem;
+    }
   }
 
+  @media @mobile {
+    background-image: url(/img/mobile2.jpg);
+  }
 }

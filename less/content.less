@@ -4,11 +4,10 @@
   margin-top: 10rem;
   margin-bottom: 3rem;
 
-  div{
+  div {
     width: 25%;
     height: 30rem;
     color: @white;
-    box-shadow: 7px 7px 7px @pink;
 
     .spring {
       width: 100%;
@@ -17,9 +16,9 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-
+      box-shadow: 7px 7px 7px @pink;
     }
-  
+
     .travel {
       width: 100%;
       background-image: url(/img/couple-bike.jpg);
@@ -27,8 +26,9 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      box-shadow: 7px 7px 7px @pink;
     }
-  
+
     .life {
       width: 100%;
       background-image: url(/img/life.jpg);
@@ -36,21 +36,75 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      box-shadow: 7px 7px 7px @pink;
     }
 
     h3 {
       text-shadow: 1px 1px 2px @black;
+
+      @media @mobile {
+        text-align: center;
+      }
     }
+
+    @media @mobile {
+      width: 90%;
+      margin: 3rem 0;
+    }
+  }
+
+  @media @mobile {
+    .flex-column();
+    box-shadow: none;
+    margin-top: 0;
   }
 }
 
 .third-content {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
   div {
     width: 25%;
     text-align: center;
+  }
+
+  @media @mobile {
+    display: none;
+  }
+}
+
+.testimonial {
+  width: 35%;
+  .flex-column;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  // box-shadow: 7px 7px 7px @grey;
+
+  div {
+    .flex-column;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+
+    h2 {
+      font-size: 5rem;
+      margin: 1rem 0;
+    }
+    img {
+      width: 30rem;
+      border-radius: 50%;
+      height: 30rem;
+
+      @media @mobile {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  @media @mobile {
+    width: 90%;
   }
 }

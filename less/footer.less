@@ -12,10 +12,14 @@ footer {
     a {
       font-size: 1.7rem;
     }
+
+    @media @mobile {
+      .flex-column();
+      height: 15rem;
+    }
   }
 
   .social {
-
     h2 {
       color: @white;
       font-size: 2rem;
@@ -29,6 +33,9 @@ footer {
         font-size: 3rem;
       }
     }
+  }
 
+  @media @mobile {
+    .flex-column()
   }
 }
