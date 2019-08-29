@@ -169,25 +169,18 @@ a:hover {
   justify-content: space-around;
   background-color: #000;
 }
-@media (max-width: 500px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .nav-bar .logo {
   width: 10rem;
   height: 10rem;
 }
-@media (max-width: 500px) {
+.nav-bar .logo img {
+  width: 100%;
+}
+@media (max-width: 500px), (max-width: 800px) {
   .nav-bar .logo {
     width: 20rem;
     height: 20rem;
   }
-}
-.nav-bar .logo img {
-  width: 100%;
 }
 .nav-bar .navigation {
   width: 20%;
@@ -195,21 +188,13 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .nav-bar .navigation {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 15rem;
-  }
-}
 .nav-bar .navigation nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
   font-size: 1.7rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-bar .navigation nav {
     display: flex;
     flex-direction: column;
@@ -231,7 +216,7 @@ a:hover {
 .nav-bar .navigation nav .nav-links a:hover {
   color: #e2e2e2;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-bar .navigation nav .nav-links {
     display: flex;
     flex-direction: column;
@@ -257,7 +242,7 @@ a:hover {
   color: #000;
   font-weight: 600;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-bar .navigation nav .signUp-btn {
     font-size: 1.7rem;
     border: none;
@@ -266,6 +251,26 @@ a:hover {
 .nav-bar .navigation nav .signUp-btn:hover {
   background-color: #fff;
   color: #000;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .nav-bar .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+  }
+}
+@media (max-width: 1008px) {
+  .nav-bar .navigation {
+    width: 30%;
+  }
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer {
   background-color: #000;
@@ -281,7 +286,7 @@ footer .footer-nav {
 footer .footer-nav a {
   font-size: 1.7rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footer-nav {
     display: flex;
     flex-direction: column;
@@ -301,7 +306,7 @@ footer .social div {
 footer .social div a {
   font-size: 3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -329,7 +334,7 @@ footer .social div a {
 .header-img .header-content .main-heading h1 {
   font-size: 20rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .header-img .header-content .main-heading h1 {
     font-size: 10rem;
   }
@@ -344,6 +349,7 @@ footer .social div a {
 }
 .header-img .header-content .create-btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 20rem;
@@ -351,7 +357,7 @@ footer .social div a {
   border: 3px solid #ff0080;
   font-size: 2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .header-img .header-content .create-btn {
     margin-top: 7rem;
   }
@@ -359,7 +365,7 @@ footer .social div a {
 .header-img .header-content .create-btn:hover {
   text-shadow: 2px 2px 4px #000000;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .header-img .header-content {
     width: 100%;
     margin-top: 15rem;
@@ -463,22 +469,22 @@ footer .social div a {
   display: none;
 }
 .img1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: url(/img/girls.jpg);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
   color: #fff;
+  background-image: url(/img/girls.jpg);
 }
 .img1 h2 {
   font-size: 7rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .img1 h2 {
     text-align: center;
     width: 100%;
@@ -491,22 +497,22 @@ footer .social div a {
   }
 }
 .img2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url(/img/man-clouds.jpg);
-  background-size: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-size: cover;
   justify-content: center;
   color: #fff;
+  background-image: url(/img/man-clouds.jpg);
 }
 .img2 h2 {
   font-size: 7rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .img2 h2 {
     text-align: center;
     width: 100%;
@@ -519,22 +525,22 @@ footer .social div a {
   }
 }
 .img3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url(/img/couple.jpg);
-  background-size: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-size: cover;
   justify-content: center;
   color: #fff;
+  background-image: url(/img/couple.jpg);
 }
 .img3 h2 {
   font-size: 7rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .img3 h2 {
     text-align: center;
     width: 100%;
@@ -558,8 +564,8 @@ footer .social div a {
   color: #fff;
 }
 .secondary-content div .spring {
-  width: 100%;
   background-image: url(/img/spring.jpg);
+  width: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -567,8 +573,8 @@ footer .social div a {
   box-shadow: 7px 7px 7px #ff0080;
 }
 .secondary-content div .travel {
-  width: 100%;
   background-image: url(/img/couple-bike.jpg);
+  width: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -576,8 +582,8 @@ footer .social div a {
   box-shadow: 7px 7px 7px #ff0080;
 }
 .secondary-content div .life {
-  width: 100%;
   background-image: url(/img/life.jpg);
+  width: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -587,18 +593,23 @@ footer .social div a {
 .secondary-content div h3 {
   text-shadow: 1px 1px 2px #000;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .secondary-content div h3 {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .secondary-content div {
     width: 90%;
     margin: 3rem 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .secondary-content div {
+    height: 50rem;
+  }
+}
+@media (max-width: 500px), (max-width: 800px) {
   .secondary-content {
     display: flex;
     flex-direction: column;
@@ -616,7 +627,7 @@ footer .social div a {
   width: 25%;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .third-content {
     display: none;
   }

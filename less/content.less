@@ -10,50 +10,39 @@
     color: @white;
 
     .spring {
-      width: 100%;
       background-image: url(/img/spring.jpg);
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      box-shadow: 7px 7px 7px @pink;
+      .content-div();
     }
 
     .travel {
-      width: 100%;
       background-image: url(/img/couple-bike.jpg);
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      box-shadow: 7px 7px 7px @pink;
+      .content-div();
     }
 
     .life {
-      width: 100%;
       background-image: url(/img/life.jpg);
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      box-shadow: 7px 7px 7px @pink;
+      .content-div();
     }
 
     h3 {
       text-shadow: 1px 1px 2px @black;
 
-      @media @mobile {
+      @media @mobile, @tablet {
         text-align: center;
       }
     }
 
-    @media @mobile {
+    @media @mobile, @tablet {
       width: 90%;
       margin: 3rem 0;
     }
+
+    @media @tablet {
+      height: 50rem;
+    }
   }
 
-  @media @mobile {
+  @media @mobile, @tablet {
     .flex-column();
     box-shadow: none;
     margin-top: 0;
@@ -70,7 +59,7 @@
     text-align: center;
   }
 
-  @media @mobile {
+  @media @mobile, @tablet {
     display: none;
   }
 }

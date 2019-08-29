@@ -1,10 +1,10 @@
-footer {  
+footer {
   background-color: @black;
   padding: 2rem 0;
   display: flex;
   justify-content: space-evenly;
 
-  .footer-nav{
+  .footer-nav {
     display: flex;
     justify-content: space-evenly;
     width: 30%;
@@ -13,7 +13,7 @@ footer {
       font-size: 1.7rem;
     }
 
-    @media @mobile {
+    @media @mobile, @tablet {
       .flex-column();
       height: 15rem;
     }
@@ -35,7 +35,7 @@ footer {
     }
   }
 
-  @media @mobile {
-    .flex-column()
+  @media @mobile, @tablet {
+    .flex-column();
   }
 }

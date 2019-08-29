@@ -1,19 +1,13 @@
 .header-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .flex-column();
   background-image: url(/img/main-bg.jpg);
   background-size: cover;
   height: 100vh;
 
-
-
   .header-content {
     width: 100%;
     margin: 20rem auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex-column();
     text-align: center;
     color: @white;
     text-shadow: 1px 1px 2px @black;
@@ -21,8 +15,8 @@
       h1 {
         font-size: 20rem;
 
-        @media @mobile {
-        font-size: 10rem;
+        @media @mobile, @tablet {
+          font-size: 10rem;
         }
       }
       h2 {
@@ -30,21 +24,19 @@
 
         @media @mobile {
           font-size: 3rem;
-          }
+        }
       }
-
     }
-    
+
     .create-btn {
-      display: flex;
-      align-items: center;
+      .flex-column();
       justify-content: space-around;
       width: 20rem;
       height: 4rem;
       border: 3px solid @pink;
       font-size: 2rem;
 
-      @media @mobile {
+      @media @mobile, @tablet {
         margin-top: 7rem;
       }
     }
@@ -53,13 +45,11 @@
       text-shadow: 2px 2px 4px #000000;
     }
 
-    @media @mobile {
+    @media @mobile, @tablet {
       width: 100%;
       margin-top: 15rem;
     }
   }
-
-
 }
 
 .passion {
@@ -67,20 +57,20 @@
   justify-content: center;
   background-color: @black;
 
-  .passion-content {  
+  .passion-content {
     color: @white;
     width: 800px;
     text-align: center;
     margin: 5rem 0;
 
-    p{
+    p {
       font-size: 2rem;
-      margin: 2rem 0;  
+      margin: 2rem 0;
     }
-  
+
     h1 {
       font-size: 5rem;
-      margin: 2rem 0; 
+      margin: 2rem 0;
 
       @media @mobile {
         font-size: 3.3rem;

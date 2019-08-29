@@ -4,22 +4,17 @@
   justify-content: space-around;
   background-color: @black;
 
-  @media @mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo{
+  .logo {
     width: 10rem;
     height: 10rem;
-    @media @mobile {
-      width: 20rem;
-      height: 20rem;
-    }
-    
+
     img {
       width: 100%;
+    }
+
+    @media @mobile, @tablet {
+      width: 20rem;
+      height: 20rem;
     }
   }
 
@@ -28,13 +23,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media @mobile {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      height: 15rem;
-    }
 
     nav {
       width: 100%;
@@ -46,37 +34,32 @@
       //   display: flex;
       //   flex-direction: column;
       // }
-      @media @mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      @media @mobile, @tablet {
+        .flex-column();
         justify-content: space-evenly;
         height: 100%;
         font-size: 1.7rem;
       }
-      
+
       .nav-links {
-       display: flex;
-       justify-content: space-around;
-       width: 50%;
-
-       a{
         display: flex;
-        align-items: center;
-       }
+        justify-content: space-around;
+        width: 50%;
 
-       a:hover {
-        color: @grey;
-       }
-
-        @media @mobile {
+        a {
           display: flex;
-          flex-direction: column;
           align-items: center;
+        }
+
+        a:hover {
+          color: @grey;
+        }
+
+        @media @mobile, @tablet {
+          .flex-column();
           height: 50%;
           justify-content: space-evenly;
         }
-
       }
 
       .signUp-btn {
@@ -87,19 +70,18 @@
         font-size: 1.7rem;
         border: 2px solid @pink;
         border-radius: 10px;
-    
-        a{
+
+        a {
           display: flex;
           align-items: center;
-          
         }
-    
+
         a:hover {
           color: @black;
           font-weight: 600;
         }
 
-        @media @mobile {
+        @media @mobile, @tablet {
           // width: 20rem;
           // height: 6rem;
           // border-radius: 20px;
@@ -107,12 +89,26 @@
           border: none;
         }
       }
-    
+
       .signUp-btn:hover {
         background-color: @white;
         color: @black;
       }
-     
     }
+
+    @media @mobile, @tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 15rem;
+    }
+
+    @media @laptop {
+      width: 30%;
+    }
+  }
+
+  @media @mobile, @tablet {
+    .flex-column();
   }
 }

@@ -1,5 +1,35 @@
-.flex-column (@direction: column, @align: center){
+.flex-column (@direction: column, @align: center) {
   display: flex;
   flex-direction: @direction;
   align-items: @align;
+}
+
+.carousel-img() {
+  .flex-column();
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  justify-content: center;
+  color: @white;
+
+  h2 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px @black;
+
+    @media @mobile, @tablet {
+      text-align: center;
+      width: 100%;
+      font-size: 5rem;
+    }
+  }
+}
+
+.content-div() {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 7px 7px 7px @pink;
 }
