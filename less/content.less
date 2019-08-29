@@ -27,22 +27,31 @@
     h3 {
       text-shadow: 1px 1px 2px @black;
 
-      @media @mobile, @tablet {
+      @media @mobile, @tablet, @laptop {
         text-align: center;
       }
     }
 
-    @media @mobile, @tablet {
-      width: 90%;
-      margin: 3rem 0;
+    @media @laptop {
+      width: 30%;
     }
 
     @media @tablet {
       height: 50rem;
     }
+
+    @media @tablet {
+      width: 90%;
+      margin: 3rem 0;
+    }
+
+    @media @mobile {
+      width: 90%;
+      margin: 3rem 0;
+    }
   }
 
-  @media @mobile, @tablet {
+  @media @tablet, @mobile {
     .flex-column();
     box-shadow: none;
     margin-top: 0;
@@ -59,7 +68,7 @@
     text-align: center;
   }
 
-  @media @mobile, @tablet {
+  @media @tablet, @mobile {
     display: none;
   }
 }
